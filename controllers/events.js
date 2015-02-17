@@ -174,11 +174,16 @@ function api(request, response){
  * Export all our functions (controllers in this case, because they
  * handles requests and render responses).
  */
+ 
+function donation(request, response){
+  response.render('donation.html');
+}
 module.exports = {
   'listEvents': listEvents,
   'eventDetail': eventDetail,
   'newEvent': newEvent,
   'saveEvent': saveEvent,
   'rsvp': rsvp,
-  'api': api
+  'api': api,
+  'donation': donation
 };
